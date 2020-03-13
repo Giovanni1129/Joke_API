@@ -1,0 +1,18 @@
+get http://localhost:8000/api/jokes HTTP/1.1
+###
+
+post http://localhost:8000/api/jokes/new HTTP/1.1
+Content-Type: application/json
+
+{
+    "setup" : "Something Something Something Something Something",
+    "punchline":"Something Something Something Something Something Something",
+}
+
+###
+
+get http://localhost:8000/api/joke/random HTTP/1.1
+
+###
+
+delete http://localhost:8000/api/jokes/delete/5e6bd87057a2705cbccb4306 HTTp/1.1
